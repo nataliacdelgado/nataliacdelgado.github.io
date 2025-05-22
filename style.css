@@ -29,7 +29,7 @@ html {
 }
 
 h1 {
-  color: #eb527e;
+  color: #ff7e96;
   font-weight: normal;
   font-size: 32x;
   margin: 0%;
@@ -213,8 +213,8 @@ h5 {
 
 button {
   background-color: #ffffff;
-  border: solid 1px #eb527e;
-  color: #eb527e;
+  border: solid 1px #ff7e96;
+  color: #ff7e96;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
