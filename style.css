@@ -75,7 +75,7 @@ h5 {
 }
 /* HEADER */
 .header {
-  background-color: #eb527e;
+  background-color: #f7faff;
   height: 60px;
   display: flex;
   justify-content: flex-end;
@@ -92,7 +92,7 @@ h5 {
 }
 
 .navlink {
-  color: #ffffff;
+  color: #ff7e89;
   margin-right: 24px;
 }
 
@@ -113,12 +113,32 @@ h5 {
 
 .hero {
   display: flex;
-  padding-top: 56px;
-  padding-bottom: 56px;
-  background-color: #ffffff;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: #f7faff;
   width: 75%;
   justify-content: space-between;
   align-items: center;
+}
+
+.mainbutton {
+  background-color: #ff7e89;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.mainbutton:hover {
+  background-color: #f7faff;
+  stroke-width: 1px;
+  stroke: #ff7e89;
 }
 
 /* .welcometitle {
@@ -126,13 +146,13 @@ h5 {
 } */
 
 .hello {
-  font-size: 24px;
-  color: #656565;
-  font-weight: bold;
+  font-size: 40px;
+  color: #2c2b2b;
+  font-weight: normal;
 }
 
 .name {
-  font-size: 64px;
+  font-size: 72px;
   font-weight: bold;
   color: #233c6f;
   padding-top: 24px;
@@ -142,10 +162,11 @@ h5 {
 }
 
 .description {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: light;
   padding-right: 56px;
-  color: #656565;
+  color: #2c2b2b;
+  width: 90%;
 }
 
 .skills {
@@ -161,12 +182,14 @@ h5 {
   flex-direction: column;
   gap: 24px;
   color: #656565;
+  margin-top: 24px;
 }
 
 .skills-bullet > li {
   display: list-item;
   margin-left: 20px;
   min-height: 72px;
+  width: 90%;
 }
 
 .experience {
@@ -207,18 +230,11 @@ button:hover {
   background-color: #ffe6ed;
 }
 
-.footer {
-  background-color: #eb527e;
-  height: 60px;
-  width: 100%;
-  margin-top: 56px;
-}
-
 .projects {
   display: inline-flex;
   gap: 24px;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 56px;
   align-items: center;
 }
 
@@ -233,6 +249,7 @@ button:hover {
 
 .about-me {
   width: 75%;
+  background-color: #f7faff;
 }
 
 .container-full {
@@ -240,6 +257,28 @@ button:hover {
   padding-bottom: 36px;
 }
 
+.container-full-hero {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: #f7faff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .contact-me {
   padding-top: 36px;
+}
+
+.footer-icon {
+  color: #ff7e96;
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.footer-icon i {
+  margin-left: 24px;
+  font-size: 24px;
 }
