@@ -310,11 +310,11 @@ button:hover {
   }
   .hero {
     flex-direction: column-reverse;
-    padding-top: 24px;
+    padding-top: 8px;
     padding-bottom: 24px;
   }
   .experience img {
-    width: 350px;
+    width: 80%;
   }
   .hero-skills {
     font-size: 12px;
@@ -342,5 +342,8 @@ button:hover {
   }
   .text {
     flex-basis: auto;
+  }
+  .container-full-hero {
+    padding-top: 24px;
   }
 }
