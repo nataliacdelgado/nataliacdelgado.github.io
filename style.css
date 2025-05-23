@@ -299,3 +299,47 @@ button:hover {
 .footer-icon a i:hover {
   color: #233c6f;
 }
+
+@media (max-width: 1024px) {
+  .header {
+    justify-content: center;
+  }
+  .headertext {
+    margin-right: 0px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .experience img {
+    width: 350px;
+  }
+  .hero-skills {
+    font-size: 12px;
+  }
+  .hello {
+    font-size: 28px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .herophoto {
+    width: 260px;
+  }
+  .skills-bullet {
+    flex-direction: column;
+  }
+  .skills-container {
+    flex-direction: column;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .text {
+    flex-basis: auto;
+  }
+}
