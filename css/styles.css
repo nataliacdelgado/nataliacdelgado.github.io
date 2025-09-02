@@ -240,6 +240,16 @@ p {
   margin-top: 16px;
 }
 
+.social a {
+  font-size: 23px;  
+  margin-right:7px;
+  transition: color 0.2s;
+
+}
+.social a:hover {
+  color:var(--primary)
+}
+
 .sociallink {
   color: var(--muted);
 }
@@ -691,7 +701,7 @@ p {
   }
 
   .hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     padding: 36px 0;
   }
@@ -744,4 +754,25 @@ p {
   .project-grid .actions {
     float: right;
   }
+   .experience-left{
+    width:100%;
+  }
+   .timeline-item{
+    flex-direction: column;
+    gap:0px;
+  }
+  .experience .bullets{
+    margin-top: 0px;
+  }
+  .social{
+    justify-content: center;;
+  }
+}
+
+@media (max-width: 630px) {
+    .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+ 
 }
