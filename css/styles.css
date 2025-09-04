@@ -442,6 +442,9 @@ p {
   gap: 8px;
   font-size: 14px;
 }
+.check-list li{
+  padding:4px 0;
+}
 
 /* Projects */
 .projects {
@@ -770,6 +773,10 @@ p {
   }
   .social{
     justify-content: center;;
+  }
+
+  .check-list {
+ grid-template-columns: 1fr;
   }
 }
 
