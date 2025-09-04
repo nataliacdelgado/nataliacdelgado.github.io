@@ -713,6 +713,10 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
+  .about-profile-grid {
+    min-width: auto;
+  }
+
   .skills-columns {
     grid-template-columns: 1fr;
   }
