@@ -6,6 +6,7 @@ const siteNav = document.querySelector('#site-nav');
 menuToggle?.addEventListener('click', () => {
   const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
   menuToggle.setAttribute('aria-expanded', String(!isOpen));
+  menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
   siteNav?.classList.toggle('is-open', !isOpen);
 });
 siteNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
