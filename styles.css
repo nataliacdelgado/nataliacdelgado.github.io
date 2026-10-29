@@ -142,3 +142,25 @@
 .project-identity-principles h4{margin:0 0 8px;font-size:13px}
 .project-identity-principles div p{margin:0;color:#626a6a;font-size:11px;line-height:1.7}
 @media(max-width:720px){:is(.eagles-case,.buck-lake-case,.guilds-case) .brand-identity.project-identity{grid-template-columns:1fr;padding:25px}:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity>div{padding:22px 0;border-left:0;border-top:1px solid rgba(35,43,48,.13)}:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity>div:first-child{padding-top:0}:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity .project-identity-principles{grid-template-columns:1fr;gap:16px;margin-top:0;padding:22px 0 0}.project-identity-principles>.eyebrow{grid-column:auto}}
+
+/* A shared, readable type scale across the portfolio. */
+.hero h1{font-size:clamp(48px,6.4vw,96px);line-height:1.03}
+.hero-intro{font-size:clamp(17px,1.5vw,20px);line-height:1.65}
+:is(.section-heading,.skills-heading,.approach-title,.about-inner,.contact-inner) h2{font-size:clamp(34px,4.2vw,56px);line-height:1.15}
+.about-lede{font-size:clamp(22px,2.5vw,32px);line-height:1.35}
+.portfolio-card h3{font-size:clamp(28px,3vw,40px)}
+:is(.project-page) :is(.wondrfly-hero,.brand-hero,.project-hero) h1{font-size:clamp(48px,6vw,76px);line-height:1.08}
+:is(.project-page) :is(.wondrfly-subtitle,.brand-subtitle){font-size:clamp(21px,2.4vw,30px);line-height:1.35}
+:is(.project-page) :is(.wondrfly-opening>p,.brand-lede){font-size:clamp(19px,2vw,24px);line-height:1.5}
+:is(.project-page) :is(.wondrfly-brief h2,.case-section h2,.brand-opportunity h2,.brand-outcome h2,.eagles-comparison h2,.buck-comparison-heading h2,.guilds-comparison-heading h2){font-size:clamp(30px,3.4vw,46px);line-height:1.18}
+:is(.project-page) :is(.wondrfly-brief p:not(.eyebrow),.case-section-heading>p,.case-copy-card p,.brand-opportunity p:not(.eyebrow),.brand-foundation-grid p,.wondrfly-contribution .case-copy-card p,.wondrfly-program .case-copy-card p,.wondrfly-foundations .case-copy-card p){font-size:15px;line-height:1.7}
+:is(.project-page) :is(.wondrfly-facts dd,.brand-facts dd,.comparison-row,.outcome-list li){font-size:14px;line-height:1.6}
+:is(.project-page) :is(.wondrfly-facts dt,.brand-facts dt,.brand-service-list li,.wondrfly-service-list li,.wondrfly-tags span,.case-gallery figcaption,.eagles-gallery figcaption,.buck-gallery figcaption,.guilds-gallery figcaption){font-size:12px}
+:is(.project-page) :is(.identity-intro>p:not(.eyebrow),.identity-caption,.identity-principles div p,.project-identity-intro>p:not(.eyebrow),.project-identity-principles div p){font-size:14px;line-height:1.7}
+:is(.project-page) :is(.identity-principles h4,.project-identity-principles h4){font-size:15px;line-height:1.4}
+:is(.project-page) :is(.identity-tags span,.project-identity-tags span,.identity-type-row span,.identity-specimen span,.identity-palette .swatches span,.identity-palette .swatches b,.project-identity-swatches b,.project-identity-swatches small){font-size:12px}
+:is(.project-page) :is(.wondrfly-identity .identity-intro h3,.project-identity .project-identity-intro h3){font-size:clamp(24px,2.2vw,30px);line-height:1.25}
+:is(.project-page) .next-project>a{font-size:clamp(32px,4vw,50px)}
+:is(.project-page) .wondrfly-marketing .project-context-note{font-size:13px!important;line-height:1.6}
+:is(.project-page) .comparison-row span b{font-size:11px}
+@media(max-width:720px){.hero h1{font-size:clamp(42px,10vw,64px)}.hero-intro{font-size:17px}:is(.project-page) :is(.wondrfly-hero,.brand-hero,.project-hero) h1{font-size:clamp(42px,10vw,60px)}:is(.project-page) :is(.wondrfly-brief h2,.case-section h2,.brand-opportunity h2,.brand-outcome h2,.eagles-comparison h2,.buck-comparison-heading h2,.guilds-comparison-heading h2){font-size:clamp(29px,7vw,38px)}}
