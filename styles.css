@@ -83,3 +83,62 @@
 .eagles-case .eagles-type-specimen:last-child strong{font-family:Arial,sans-serif;font-weight:500}
 .eagles-case .eagles-type-specimen span{display:block;margin-top:5px;color:#66717a;font-size:11px;line-height:1.5}
 @media(max-width:720px){.eagles-case .brand-identity{grid-template-columns:1fr;gap:22px;padding:22px}.eagles-case .brand-identity>div+div{padding:20px 0 0;border-left:0;border-top:1px solid rgba(20,43,62,.13)}}
+
+/* Extend the Wondrfly navigation background to the edges of the viewport. */
+.wondrfly-case .site-header{isolation:isolate}
+.wondrfly-case .site-header::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#e5e1f5}
+
+/* Wondrfly visual identity */
+.wondrfly-case .wondrfly-identity{display:grid;grid-template-columns:1.05fr 1.1fr 1fr;gap:0;margin-top:45px;padding:38px 36px;background:#eeeaff;border-radius:20px}
+.wondrfly-case .wondrfly-identity>div{padding:0 30px;border-left:1px solid rgba(45,31,82,.12)}
+.wondrfly-case .wondrfly-identity>div:first-child{padding-left:0;border:0}
+.wondrfly-case .wondrfly-identity .eyebrow{margin:0 0 16px}
+.wondrfly-case .identity-intro h3{max-width:260px;margin:0 0 15px;color:#241a4e;font-size:clamp(25px,2.2vw,34px);line-height:1.2}
+.wondrfly-case .identity-intro>p:not(.eyebrow),.wondrfly-case .identity-caption{color:#5c6074;font-size:12px;line-height:1.75}
+.wondrfly-case .identity-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.wondrfly-case .identity-tags span{padding:6px 10px;border:1px solid rgba(85,84,224,.2);border-radius:99px;color:#5554b7;font-size:10px}
+.wondrfly-case .identity-palette .swatches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:18px}
+.wondrfly-case .identity-palette .swatches span{height:auto;padding:53px 0 0;color:#68677a;font-size:10px;line-height:1.5}
+.wondrfly-case .identity-palette .swatches span:before{inset:0 0 auto;height:44px;border:1px solid rgba(45,31,82,.08);border-radius:8px}
+.wondrfly-case .identity-palette .swatches b{display:block;color:#292348;font-size:11px;font-weight:600}
+.wondrfly-case .identity-type-row{padding:12px 0 17px;border-bottom:1px solid rgba(45,31,82,.12)}
+.wondrfly-case .identity-type-row:last-child{border-bottom:0}
+.wondrfly-case .identity-type-row strong{display:block;color:#292348;font-family:'Comfortaa',sans-serif;font-size:25px;font-weight:500}
+.wondrfly-case .identity-type-row:last-child strong{font-family:'Poppins',sans-serif}
+.wondrfly-case .identity-type-row span{display:block;margin-top:7px;color:#606176;font-size:11px}
+.wondrfly-case .wondrfly-identity .identity-principles{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:32px;padding:26px 0 0;border:0;border-top:1px solid rgba(45,31,82,.12)}
+.wondrfly-case .identity-principles>.eyebrow{grid-column:1/-1;margin:0}
+.wondrfly-case .identity-principles h4{margin:0 0 8px;color:#292348;font-size:13px}
+.wondrfly-case .identity-principles div p{margin:0;color:#606176;font-size:11px;line-height:1.7}
+@media(max-width:720px){.wondrfly-case .wondrfly-identity{grid-template-columns:1fr;padding:25px}.wondrfly-case .wondrfly-identity>div{padding:22px 0;border-left:0;border-top:1px solid rgba(45,31,82,.12)}.wondrfly-case .wondrfly-identity>div:first-child{padding-top:0}.wondrfly-case .wondrfly-identity .identity-principles{grid-template-columns:1fr;gap:16px;margin-top:0;padding:22px 0 0}.wondrfly-case .identity-principles>.eyebrow{grid-column:auto}}
+
+.wondrfly-case .identity-palette .swatches span:nth-child(3){border:0}
+
+/* Project visual identities */
+:is(.eagles-case,.buck-lake-case,.guilds-case) .brand-identity.project-identity{display:grid;grid-template-columns:1.05fr 1.1fr 1fr;align-items:start;gap:0;margin-top:45px;padding:38px 36px;border-radius:20px;background:#f3f2ee;color:#17314a}
+.buck-lake-case .brand-identity.project-identity{background:#f1eee4;color:#193423}
+.guilds-case .brand-identity.project-identity{background:#f2ede2;color:#432c15}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity>div{padding:0 30px;border-left:1px solid rgba(35,43,48,.13)}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity>div:first-child{padding-left:0;border:0}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity .eyebrow{margin:0 0 16px}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity-intro h3{max-width:270px;margin:0 0 15px;font-size:clamp(25px,2.2vw,34px);line-height:1.2;color:inherit}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity-intro>p:not(.eyebrow){margin:0;color:#626a6a;font-size:12px;line-height:1.75}
+.project-identity-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.project-identity-tags span{padding:6px 10px;border:1px solid rgba(35,43,48,.18);border-radius:99px;font-size:10px}
+.project-identity-swatches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.project-identity-swatches span{display:block;font-size:10px;line-height:1.5}
+.project-identity-swatches i{display:block;height:44px;margin-bottom:7px;border:1px solid rgba(35,43,48,.1);border-radius:8px}
+.project-identity-swatches b,.project-identity-swatches small{display:block;font-size:10px}
+.project-identity-swatches small{color:#686a68}
+.project-identity .identity-specimen{padding:12px 0 17px;border-bottom:1px solid rgba(35,43,48,.13)}
+.project-identity .identity-specimen:last-child{border:0}
+.project-identity .identity-specimen strong{display:block;font-size:25px;font-weight:500;line-height:1.25}
+.project-identity .identity-specimen span{display:block;margin-top:7px;color:#626a6a;font-size:11px}
+.eagles-identity .identity-specimen:first-of-type strong{font-family:Impact,Arial,sans-serif}.eagles-identity .identity-specimen:last-child strong{font-family:Arial,sans-serif}
+.buck-identity .identity-specimen:first-of-type strong{font-family:'Fraunces',Georgia,serif}.buck-identity .identity-specimen:last-child strong{font-family:'Inter',Arial,sans-serif}
+.guilds-identity .identity-specimen:first-of-type strong{font-family:Georgia,serif}.guilds-identity .identity-specimen:last-child strong{font-family:'Inria Sans',Arial,sans-serif}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity .project-identity-principles{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px;padding:26px 0 0;border:0;border-top:1px solid rgba(35,43,48,.13)}
+.project-identity-principles>.eyebrow{grid-column:1/-1}
+.project-identity-principles h4{margin:0 0 8px;font-size:13px}
+.project-identity-principles div p{margin:0;color:#626a6a;font-size:11px;line-height:1.7}
+@media(max-width:720px){:is(.eagles-case,.buck-lake-case,.guilds-case) .brand-identity.project-identity{grid-template-columns:1fr;padding:25px}:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity>div{padding:22px 0;border-left:0;border-top:1px solid rgba(35,43,48,.13)}:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity>div:first-child{padding-top:0}:is(.eagles-case,.buck-lake-case,.guilds-case) .project-identity .project-identity-principles{grid-template-columns:1fr;gap:16px;margin-top:0;padding:22px 0 0}.project-identity-principles>.eyebrow{grid-column:auto}}
