@@ -219,3 +219,19 @@
   .section-heading>p,.wondrfly-case .wondrfly-brief>div+div,.wondrfly-case .wondrfly-content .case-section-heading>p{transform:none}
   .wondrfly-case .wondrfly-brief>div+div{padding-top:0}
 }
+
+/* Align the brief and opportunity copy with the main heading. */
+@media(min-width:721px){
+  .wondrfly-case .wondrfly-brief,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opportunity{row-gap:14px}
+  .wondrfly-case .wondrfly-brief>div:first-child,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opportunity>div:first-child{display:contents}
+  .wondrfly-case .wondrfly-brief>div:first-child>.eyebrow,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opportunity>div:first-child>.eyebrow{grid-column:1;grid-row:1;margin:0}
+  .wondrfly-case .wondrfly-brief>div:first-child>h2,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opportunity>div:first-child>h2{grid-column:1;grid-row:2;margin:0}
+  .wondrfly-case .wondrfly-brief>div+div,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opportunity>div+div{grid-column:2;grid-row:2}
+  .wondrfly-case .wondrfly-brief>div+div>p:first-child,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opportunity>div+div>p:first-child{margin-top:0}
+}
