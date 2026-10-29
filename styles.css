@@ -164,3 +164,58 @@
 :is(.project-page) .wondrfly-marketing .project-context-note{font-size:13px!important;line-height:1.6}
 :is(.project-page) .comparison-row span b{font-size:11px}
 @media(max-width:720px){.hero h1{font-size:clamp(42px,10vw,64px)}.hero-intro{font-size:17px}:is(.project-page) :is(.wondrfly-hero,.brand-hero,.project-hero) h1{font-size:clamp(42px,10vw,60px)}:is(.project-page) :is(.wondrfly-brief h2,.case-section h2,.brand-opportunity h2,.brand-outcome h2,.eagles-comparison h2,.buck-comparison-heading h2,.guilds-comparison-heading h2){font-size:clamp(29px,7vw,38px)}}
+
+/* Align the Wondrfly project note with the copy above. */
+.wondrfly-case .wondrfly-marketing .project-context-note{width:100%;max-width:600px}
+
+/* Keep the marketing and outcome sections on the same two-column grid. */
+.wondrfly-case .wondrfly-marketing{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:45px;row-gap:26px;align-items:start}
+.wondrfly-case .wondrfly-marketing .case-section-heading{display:contents}
+.wondrfly-case .wondrfly-marketing .case-section-heading>div{grid-column:1;grid-row:1}
+.wondrfly-case .wondrfly-marketing .case-section-heading>p{grid-column:2;grid-row:1;max-width:none;margin:0;transform:none}
+.wondrfly-case .wondrfly-marketing .wondrfly-tags{grid-column:2;grid-row:2;justify-content:flex-start;max-width:none;margin:0}
+.wondrfly-case .wondrfly-marketing .project-actions{grid-column:1;grid-row:3;margin:0}
+.wondrfly-case .wondrfly-marketing .project-context-note{grid-column:2;grid-row:3;max-width:none;margin:0!important}
+.wondrfly-case .wondrfly-outcome{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start}
+.wondrfly-case .wondrfly-outcome .case-section-heading>p{transform:none}
+@media(max-width:720px){.wondrfly-case .wondrfly-marketing,.wondrfly-case .wondrfly-outcome{grid-template-columns:minmax(0,1fr);row-gap:22px}.wondrfly-case .wondrfly-marketing .case-section-heading>div,.wondrfly-case .wondrfly-marketing .case-section-heading>p,.wondrfly-case .wondrfly-marketing .wondrfly-tags,.wondrfly-case .wondrfly-marketing .project-actions,.wondrfly-case .wondrfly-marketing .project-context-note{grid-column:1;grid-row:auto}}
+
+/* Extend each project header's colour across the full viewport. */
+:is(.eagles-case,.buck-lake-case,.guilds-case) .site-header{isolation:isolate}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .site-header::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%)}
+.eagles-case .site-header::before{background:#0d326d}
+.buck-lake-case .site-header::before{background:#0e2617}
+.guilds-case .site-header::before{background:#f1e3ce}
+
+/* Give project introductions a continuous full-width background. */
+:is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opening{position:relative;isolation:isolate}
+:is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opening::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#f8f7f3}
+.guilds-case .brand-opening::before{background:#faf8f2}
+
+/* Shared alignment for portfolio content. */
+@media (min-width:721px){
+  .section-heading{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:45px;align-items:start}
+  .section-heading>p{max-width:none;margin:0;transform:none}
+  .wondrfly-case .wondrfly-opening,
+  .wondrfly-case .wondrfly-brief,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) :is(.brand-opening,.brand-opportunity,.brand-outcome){grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:45px;align-items:start}
+  .wondrfly-case .wondrfly-brief>div+div,
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-opportunity>div+div{padding-top:0;transform:none}
+  .wondrfly-case .wondrfly-contribution .case-section-heading{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:45px;align-items:start}
+  .wondrfly-case .wondrfly-contribution .case-section-heading>p{max-width:none;transform:none}
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-outcome .case-section-heading{align-items:start}
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-foundation-grid,
+  .wondrfly-case :is(.wondrfly-contribution,.wondrfly-foundations) .case-copy-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto auto 1fr;align-items:stretch}
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-foundation-grid article,
+  .wondrfly-case :is(.wondrfly-contribution,.wondrfly-foundations) .case-copy-card{display:grid;grid-template-rows:subgrid;grid-row:span 3;align-content:start}
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-foundation-grid article>span,
+  .wondrfly-case :is(.wondrfly-contribution,.wondrfly-foundations) .case-copy-card .step{align-self:start}
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-foundation-grid h3,
+  .wondrfly-case :is(.wondrfly-contribution,.wondrfly-foundations) .case-copy-card h3{align-self:start}
+  :is(.eagles-case,.buck-lake-case,.guilds-case) .brand-foundation-grid p,
+  .wondrfly-case :is(.wondrfly-contribution,.wondrfly-foundations) .case-copy-card p{align-self:start}
+}
+@media (max-width:720px){
+  .section-heading>p,.wondrfly-case .wondrfly-brief>div+div,.wondrfly-case .wondrfly-content .case-section-heading>p{transform:none}
+  .wondrfly-case .wondrfly-brief>div+div{padding-top:0}
+}
