@@ -303,3 +303,7 @@
 
 /* Keep circular project arrows centred. */
 .card-arrow.site-arrow{display:grid;place-items:center;line-height:1}
+
+/* Keep Guilds comparison links together on wider screens. */
+.guilds-comparison-heading .comparison-links{flex-wrap:nowrap;flex-shrink:0}
+@media(max-width:420px){.guilds-comparison-heading .comparison-links{flex-wrap:wrap}}
