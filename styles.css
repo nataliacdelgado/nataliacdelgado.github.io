@@ -300,3 +300,6 @@
 @media(max-width:720px){.eagles-comparison-links{justify-content:flex-start}}
 .comparison-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
 @media(max-width:720px){.comparison-links{justify-content:flex-start}}
+
+/* Keep circular project arrows centred. */
+.card-arrow.site-arrow{display:grid;place-items:center;line-height:1}
