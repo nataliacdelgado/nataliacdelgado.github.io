@@ -258,3 +258,15 @@
   .wondrfly-case .wondrfly-outcome .case-section-heading>p{grid-column:1;grid-row:3;margin:0;transform:none}
   .wondrfly-case .wondrfly-outcome .outcome-list{grid-column:2;grid-row:3;margin-top:-17px}
 }
+
+/* Align the first outcome line with the adjacent paragraph. */
+@media(min-width:721px){.wondrfly-case .wondrfly-outcome .outcome-list{margin-top:-15px}}
+
+/* Align the outcome list with the main heading. */
+@media(min-width:721px){.wondrfly-case .wondrfly-outcome .outcome-list{grid-row:2 / span 2;margin-top:-17px}}
+
+/* Align the Wondrfly introduction with the role description. */
+@media(min-width:721px){.wondrfly-case .wondrfly-opening>p{padding-top:53.8px}}
+
+/* Align the role and status labels with the opening paragraph. */
+@media(min-width:721px){.wondrfly-case .wondrfly-opening>p{padding-top:0}.wondrfly-case .wondrfly-facts{padding-top:0}}
