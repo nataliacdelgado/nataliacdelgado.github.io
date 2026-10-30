@@ -279,3 +279,14 @@
   .work-section .section-heading>div>h2{grid-column:1;grid-row:2;margin:0}
   .work-section .section-heading>p{grid-column:2;grid-row:2;margin:0;transform:none}
 }
+
+/* Use the same text-style arrow across internal and external links. */
+.site-arrow{font-family:Arial,sans-serif;font-style:normal;font-weight:400;font-variant-emoji:text;display:inline-block}
+
+/* Let the next section peek into view on phones. */
+@media(max-width:720px){
+  .hero{min-height:0;padding-top:38px;padding-bottom:52px;align-items:start}
+  .hero-copy{transform:none}
+  .hero .eyebrow{margin-bottom:18px}
+  .hero-intro{margin:20px 0 24px}
+}
